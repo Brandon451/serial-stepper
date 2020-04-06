@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="css/layout.css" rel="stylesheet" type="text/css">
+  <title></title>
+  <h5><br></h5>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h3><b>
+          <center>Serial Stepper</center>
+        </b></h3>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="jumbotron">
+          <h3><b>
+              <center>Stepper 1</center>
+            </b></h3>
+          <br>
+          <div class="form-group">
+            <label for="stepper1_pos">Position:</label>
+            <input type="number" name="stepper1" value=0 id="stepper1_pos" class="form-control" required>
+          </div>
+          <br>
+          <div align="center">
+            <div class="row">
+              <div class="col-sm-6">
+                <button id="btn-test-s1" class="btn btn-info btn-nrm">Test</button>
+              </div>
+              <div class="col-sm-6">
+                <button id="btn-stop-s1" class="btn btn-danger btn-nrm">Stop</button>
+              </div>
+              <script>
+                require('./renderer.js')
+              </script>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--Column-->
+
+      <div class="col-sm-3">
+        <div class="jumbotron">
+          <h3><b>
+              <center>Stepper 2</center>
+            </b></h3>
+          <br>
+          <div class="form-group">
+            <label for="stepper2_pos">Position:</label>
+            <input type="number" name="stepper2" value="" id="stepper2_pos" placeholder=0 class="form-control" required>
+          </div>
+          <br>
+          <div align="center">
+            <div class="row">
+              <div class="col-sm-6">
+                <button id="btn-test-s2" class="btn btn-info btn-nrm">Test</button>
+              </div>
+              <div class="col-sm-6">
+                <button id="btn-stop-s2" class="btn btn-danger btn-nrm">Stop</button>
+              </div>
+              <script>
+                require('./renderer.js')
+              </script>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--Column-->
+
+      <div class="col-sm-3">
+        <div class="jumbotron">
+          <div align="center">
+            <h5>Data file</h5>
+            <br>
+            <form>
+              <label for="file-upload" class="btn btn-info">
+                Select data file
+              </label>
+              <input id="file-upload" name="upload-file" type="file" style="display:none">
+            </form>
+            <br>
+            <p>No file selected</p>
+          </div>
+        </div>
+      </div>
+      <!--Column-->
+
+      <div class="col-sm-3">
+        <div class="jumbotron">
+          <h4>Stepper 1</h4>
+          <h6>Position: </h6><br>
+          <h4>Stepper 2</h4>
+          <h6>Position: </h6>
+        </div>
+      </div>
+      <!--Column-->
+
+    </div>
+    <!--Row-->
+    <div class="jumbotron">
+      <div align="center">
+        <div class="row">
+          <div class="col-sm-4">
+            <button class="btn btn-info btn-spl">
+              Test
+            </button>
+          </div>
+          <!--Column-->
+          <div class="col-sm-4">
+            <button class="btn btn-danger btn-spl">
+              Stop
+            </button>
+          </div>
+          <!--Column-->
+          <div class="col-sm-4">
+            <button class="btn btn-success btn-spl">
+              Start
+            </button>
+          </div>
+          <!--Column-->
+        </div>
+        <!--Row-->
+      </div>
+    </div>
+
+  </div>
+  <!--Container-->
+</body>
+
+</html>

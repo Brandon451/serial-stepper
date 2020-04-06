@@ -1,0 +1,17 @@
+{
+  "name": "serial-stepper",
+  "version": "1.1.0",
+  "description": "A simple gui to test and run 2 stepper motors simultaneously",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Brandon",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^8.2.0"
+  },
+  "dependencies": {
+    "python-shell": "^1.0.8"
+  }
+}
