@@ -9,7 +9,7 @@
   "author": "Brandon",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^8.2.0"
+    "electron": "^8.5.1"
   },
   "dependencies": {
     "python-shell": "^1.0.8"
